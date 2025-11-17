@@ -1,0 +1,23 @@
+[
+    {
+        "id": "BUS101",
+        "name": "Blue Line Express",
+        "from": "Chennai",
+        "to": "Bangalore",
+        "time": "08:00 AM"
+    },
+    {
+        "id": "BUS202",
+        "name": "Green City Travels",
+        "from": "Bangalore",
+        "to": "Hyderabad",
+        "time": "04:00 PM"
+    },
+    {
+        "id": "BUS303",
+        "name": "Red Fast Travels",
+        "from": "Hyderabad",
+        "to": "Chennai",
+        "time": "09:30 PM"
+    }
+]
