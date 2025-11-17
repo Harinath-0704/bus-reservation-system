@@ -3,12 +3,10 @@ import json, uuid
 
 app = Flask(__name__)
 
-# Load buses from JSON file
 def load_buses():
     with open("buses.json", "r") as f:
         return json.load(f)
 
-# Save booking details
 def save_booking(data):
     try:
         with open("bookings.json", "r") as f:
@@ -45,9 +43,8 @@ def confirm():
         "age": request.form["age"],
         "seat": request.form["seat"]
     }
-
     save_booking(booking)
     return render_template("success.html", booking=booking)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+app.run(host="0.0.0.0", port=10000)
+
