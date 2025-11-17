@@ -1,9 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
 <h2>Available Buses</h2>
-<ul>
-    {% for bus in buses %}
-        <li>
-            <b>{{ bus.name }}</b> ({{ bus.from }} → {{ bus.to }}) at {{ bus.time }}
-            — <a href="/book/{{ bus.id }}">Book Now</a>
-        </li>
-    {% endfor %}
-</ul>
+
+{% for bus in buses %}
+<div class="bus-card">
+    <h3>{{ bus.name }}</h3>
+    <p><b>Route:</b> {{ bus.from }} → {{ bus.to }}</p>
+    <p><b>Time:</b> {{ bus.time }}</p>
+    <a class="btn" href="/book/{{ bus.id }}">Book Now</a>
+</div>
+{% endfor %}
+
+{% endblock %}
