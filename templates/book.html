@@ -1,0 +1,17 @@
+<h2>Book Seat - {{ bus.name }}</h2>
+
+<form method="POST" action="/confirm">
+
+    <input type="hidden" name="bus_id" value="{{ bus.id }}">
+
+    <label>Name:</label><br>
+    <input name="name" required><br><br>
+
+    <label>Age:</label><br>
+    <input name="age" required><br><br>
+
+    <label>Seat Number:</label><br>
+    <input name="seat" required><br><br>
+
+    <button type="submit">Confirm Booking</button>
+</form>
