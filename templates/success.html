@@ -1,9 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+
 <h2>Booking Successful!</h2>
 
 <p><b>Booking ID:</b> {{ booking.id }}</p>
 <p><b>Bus ID:</b> {{ booking.bus_id }}</p>
 <p><b>Name:</b> {{ booking.name }}</p>
-<p><b>Seat Number:</b> {{ booking.seat }}</p>
+<p><b>Seat:</b> {{ booking.seat }}</p>
 
-<br>
-<a href="/">Back to Home</a>
+<a class="btn" href="/">Back to Home</a>
+
+{% endblock %}
