@@ -1,0 +1,9 @@
+<h2>Available Buses</h2>
+<ul>
+    {% for bus in buses %}
+        <li>
+            <b>{{ bus.name }}</b> ({{ bus.from }} → {{ bus.to }}) at {{ bus.time }}
+            — <a href="/book/{{ bus.id }}">Book Now</a>
+        </li>
+    {% endfor %}
+</ul>
